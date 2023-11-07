@@ -26,7 +26,7 @@ public class RuletaLaboratorio {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        float i;
+        int i;
         int max = 24;
         int min = 1;
         int rango = max - min + 1;
@@ -44,19 +44,19 @@ public class RuletaLaboratorio {
             System.out.println("Valor incorrecto, vuelva a introducir la cantidad de ruletas a girar");
             n = input.nextInt();
         }
-        for (i = 0; i <= n; i++) {
+        for (i = 1; i <= n; i++) {
             System.out.println("----------");
-            System.out.println("Giro #" + i+1);
+            System.out.println("Giro #" + i);
             System.out.println("----------");
             LanzamientoBlanca = (int) (Math.random() * rango) + min;
             LanzamientoNegra = (int) (Math.random() * rango) + min;
             sum = LanzamientoBlanca + LanzamientoNegra;
-            if(LanzamientoBlanca % 2 == 1) {
+            if (LanzamientoBlanca % 2 == 1) {
                 colorBlanca = 0;
-            }else{
+            } else {
                 colorBlanca = 1;
             }
-            if(LanzamientoNegra % 2 == 1) {
+            if (LanzamientoNegra % 2 == 1) {
                 colorNegra = 0;
             } else {
                 colorNegra = 1;
@@ -82,7 +82,6 @@ public class RuletaLaboratorio {
                         sum3++;
                     } else {
                         System.out.println("PERDISTE :'(");
-                        
                     }
                 }
             }
