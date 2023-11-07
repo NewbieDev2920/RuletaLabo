@@ -54,10 +54,10 @@ public class RuletaLaboratorio {
             if(LanzamientoBlanca % 2 == 1) {
                 colorBlanca = 0;
             }else{
-                colorNegra = 1;
+                colorBlanca = 1;
             }
             if(LanzamientoNegra % 2 == 1) {
-                colorBlanca = 0;
+                colorNegra = 0;
             } else {
                 colorNegra = 1;
             }
