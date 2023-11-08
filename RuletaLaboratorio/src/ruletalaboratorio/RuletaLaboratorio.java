@@ -74,14 +74,10 @@ public class RuletaLaboratorio {
                 sum1++;
             } else {
                 if (colorBlanca == 1 & colorNegra == 0 & (sum >= 20 | sum < 29)) {
-                    /*System.out.println("GANASTE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                    System.out.println("por condicion 2");*/
                     System.out.println("Ganancia por condicion 2");
                     sum2++;
                 } else {
                     if (colorBlanca == 0 & colorNegra == 1 & sum <= 21) {
-                        /*System.out.println("GANASTE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                        System.out.println("por condicion 3");*/
                         System.out.println("Ganancia por condicion 3");
                         sum3++;
                     } else {
