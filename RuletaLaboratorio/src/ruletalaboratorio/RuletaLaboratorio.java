@@ -5,6 +5,7 @@
 package ruletalaboratorio;
 
 import java.lang.Math;
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -26,6 +27,7 @@ public class RuletaLaboratorio {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Random rand = new Random();
         int flow;
         int giros = 1;
         int max = 24;
@@ -50,8 +52,8 @@ public class RuletaLaboratorio {
             System.out.println("----------");
             System.out.println("Giro #" + giros);
             System.out.println("----------");
-            LanzamientoBlanca = (int) (Math.random() * rango) + min;
-            LanzamientoNegra = (int) (Math.random() * rango) + min;
+            LanzamientoBlanca = rand.nextInt(rango) + min;
+            LanzamientoNegra = rand.nextInt(rango) + min;
             sum = LanzamientoBlanca + LanzamientoNegra;
             if (LanzamientoBlanca % 2 == 1) {
                 colorBlanca = 0;
